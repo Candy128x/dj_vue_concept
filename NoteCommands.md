@@ -30,3 +30,7 @@
 - => pip install djangorestframework
 
 
+
+---
+## app: employee
+- =>python3 manage.py startapp employee
