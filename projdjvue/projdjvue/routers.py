@@ -6,4 +6,4 @@ from article.views import ArticleView
 router = routers.DefaultRouter()
 
 router.register(r'article', ArticleView)
-# router.extend(r'emp', EmpInfoView)
+# router.register(r'emp', EmpInfoView)

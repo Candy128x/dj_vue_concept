@@ -1,18 +1,13 @@
-from rest_framework import routers
-from . import views
 from django.urls import path, include
-from django.views.generic import TemplateView
+from . import views
+from rest_framework import routers
 
 
 router = routers.DefaultRouter()
-router.register(r'employee', views.EmpInfoView)
-# router.register(r'comp_list', views.CompListView)
+router.register('api/employee', views.EmpInfoView)
+# router.register('comp_list', views.CompListView)
 
 
 urlpatterns = [
-    # API
     path('', include(router.urls)),
-
-    # Web
-    path('employee/', TemplateView.as_view(template_name='index.html')),
 ]

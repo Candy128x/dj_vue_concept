@@ -40,4 +40,10 @@
 - => python3 manage.py makemigrations
 - => python3 manage.py migrate
 
+- => pip install drf-nested-routers
+
+
+---
+### app: movie
+- => python3 manage.py startapp movie
 
