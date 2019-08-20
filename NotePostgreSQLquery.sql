@@ -14,8 +14,9 @@ FROM info_schema.columns
 WHERE table_schema = 'empapi_empinfo';
 
 ---
-SELECT * FROM table_name ORDER BY 1 DESC;
-SELECT * FROM public.article_article;
+SELECT * FROM article_article ORDER BY 1 DESC;
+SELECT * FROM movie_movie ORDER BY 1 DESC;
+SELECT * FROM movie_song ORDER BY 1 DESC;
 
 
 

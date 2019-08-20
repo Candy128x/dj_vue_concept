@@ -35,7 +35,6 @@
 ## app: employee
 - =>python3 manage.py startapp employee
 
-
 ---
 - => python3 manage.py makemigrations
 - => python3 manage.py migrate
@@ -47,3 +46,6 @@
 ### app: movie
 - => python3 manage.py startapp movie
 
+---
+- => python3 manage.py makemigrations
+- => python3 manage.py migrate

@@ -26,4 +26,5 @@ urlpatterns = [
     # path('article_api/', include('article.urls')),
     path('', include('article.urls')),
     # path('', include('employee.urls')),
+    path('', include('movie.urls')),
 ]
