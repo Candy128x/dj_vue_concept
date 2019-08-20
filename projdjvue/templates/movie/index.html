@@ -1,3 +1,91 @@
+{% include 'layouts/header.html' %}
 <div class="container-fluid">
 
+    <h5>movie-index</h5>
+
+<form class="col-md-3" id="app" @submit="checkForm" method="POST" action="/movie_index">
+    {% csrf_token %}
+
+    <p v-if="errors.length">
+        <b>Please correct following errors:</b>
+        <ul>
+            <li v-for="error in errors" style="color:red;">[( error )]</li>
+        </ul>
+    </p>
+
+    <div>
+    <label for="full_name">Full Name</label>
+    <input type="text" class="form-control" id="full_name" v-model="full_name">
+    </div><br>
+
+    <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" class="form-control" id="email" v-model="email">
+    </div>
+
+    <div class="form-group">
+    <label for="contact_no">Contact Number</label>
+    <input type="number" class="form-control" id="contact_no" v-model="contact_no">
+    </div>
+
+    <div class="form-group">
+    <label for="company_name">Company Name</label>
+    <input type="text" class="form-control" id="company_name" v-model="company_name">
+    </div>
+
+    <div class="form-group">
+    <label for="pwd">Password</label>
+    <input type="password" class="form-control" id="pwd" v-model="pwd">
+    </div>
+
+    <div class="form-group">
+    <label for="re_pwd">Re-enter Password</label>
+    <input type="password" class="form-control" id="re_pwd" v-model="re_pwd">
+    </div>
+
+    <button type="submit" class="btn btn-default">Next</button>
+    <button type="submit" class="btn btn-default" style="margin-left:5px;">Submit</button>
+</form>
+
+
 </div>
+
+<script>
+
+const app = new Vue({
+    el: '#app',
+    data: {
+        errors: [],
+        full_name: null,
+        email: null,
+        contact_no: null,
+        company_name: null,
+        pwd: null,
+        re_pwd: null
+    },
+
+    methods: {
+        checkForm: function (e) {
+
+        if (this.full_name) {
+            return true;
+        }
+
+        this.errors = [];
+
+        if (!this.full_name) {
+            this.errors.push('Full Name Required!');
+        }
+
+        console.log(this.errors);
+
+        e.preventDefault();
+        }
+    }
+    
+});
+
+
+</script>
+
+{% include 'layouts/footer.html' %}

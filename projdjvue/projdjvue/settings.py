@@ -59,8 +59,8 @@ ROOT_URLCONF = 'projdjvue.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        # 'DIRS': [os.path.join(BASE_DIR, 'templates')], # To access proj/templets/files.html
+        # 'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')], # To access proj/templets/files.html
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

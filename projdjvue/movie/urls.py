@@ -15,4 +15,5 @@ urlpatterns = [
 
     # Web
     # path('article_list/', TemplateView.as_view(template_name='index.html')),
+    path('movie_index', views.index, name='index')
 ]
