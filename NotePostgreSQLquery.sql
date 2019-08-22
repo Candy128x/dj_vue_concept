@@ -30,7 +30,9 @@ INNER JOIN movie_movie AS mm ON (ms.movie_id = mm.id)
 ORDER BY 1 DESC;
 
 
-
+--- songSearch
+SELECT * FROM movie_song
+WHERE name LIKE '%son%';
 
 
 

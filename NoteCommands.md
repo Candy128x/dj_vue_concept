@@ -49,3 +49,13 @@
 ---
 - => python3 manage.py makemigrations
 - => python3 manage.py migrate
+
+
+
+---
+# Vue Commands
+
+- npm install 
+- npm start
+
+
