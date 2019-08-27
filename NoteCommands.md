@@ -53,9 +53,35 @@
 
 
 ---
+## JWT
+<!--
+- => pip install djangorestframework-jwt
+-->
+
+- => pip install djangorestframework_simplejwtpython3 manage.py createsuperuser
+
+
+- => python3 manage.py createsuperuser
+- un: ashish, pwd: qwerty
+
+
+---
+## FC Customer Registration
+- => python3 manage.py startapp fc_cust_reg
+
+
+
+---
 # Vue Commands
 
 - npm install 
 - npm start
 
 
+
+---
+## py test
+- => pip install pytest
+- => pip install pytest-django
+- => pip install pytest-cov
+- => pip install mixer

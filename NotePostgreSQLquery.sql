@@ -35,4 +35,10 @@ SELECT * FROM movie_song
 WHERE name LIKE '%son%';
 
 
+--- fc_cust_reg
+
+CREATE TABLE company
+()
+
+
 

@@ -18,6 +18,7 @@ from django.urls import path, include
 # from .routers import router
 # from django.conf.urls import url
 # from django.views.generic import TemplateView
+from rest_framework_simplejwt import views as jwt_views
 
 
 urlpatterns = [
@@ -27,4 +28,7 @@ urlpatterns = [
     path('', include('article.urls')),
     # path('', include('employee.urls')),
     path('', include('movie.urls')),
+
+    path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
 ]
