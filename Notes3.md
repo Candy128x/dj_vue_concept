@@ -8,6 +8,11 @@
 >https://medium.com/quick-code/crud-app-using-vue-js-and-django-516edf4e4217
 
 
+---
+- @ref pytest
+>https://www.youtube.com/watch?v=AKqd46cexzQ
+
+
 ---JWT
 - for authentication
 - PostMan (dj_vue_concept | [dir]) 
@@ -47,6 +52,7 @@
 
 - table field name
 - ~ under_score
+
 
 ---
 # Note for Developer

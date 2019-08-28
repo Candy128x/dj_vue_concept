@@ -85,3 +85,15 @@
 - => pip install pytest-django
 - => pip install pytest-cov
 - => pip install mixer
+
+
+### run test case
+- => python3 manage.py test
+
+
+### test api
+- => pip install requests
+- => python3 movie/test_api.py
+
+(for API)
+- => python3 manage.py test movie.test_api_movie
