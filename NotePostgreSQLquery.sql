@@ -32,7 +32,7 @@ ORDER BY 1 DESC;
 
 --- songSearch
 SELECT * FROM movie_song
-WHERE name LIKE '%son%';
+WHERE name LIKE '%son%';a
 
 
 --- fc_cust_reg

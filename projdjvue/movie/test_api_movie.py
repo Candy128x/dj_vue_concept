@@ -37,7 +37,8 @@ class MovieApiTestCase(APITestCase):
         self.assertEqual(response.status_code, 400)
 
     def test_put_metod(self):
-        url = 'http://localhost:8000/api/movie/1/'
+        getId = Movie.objects.get(name='Raam Katha').id
+        url = 'http://localhost:8000/api/movie/'+str(getId)+'/'
         data = {
             'name': "Pawan",
             'launch_date': "2019-04-02"
