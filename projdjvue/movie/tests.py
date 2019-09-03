@@ -5,9 +5,6 @@ import datetime
 # Create your tests here.
 
 
-# @pytest
-
-
 class MovieTestCase(TestCase):
     def setUp(self):
         print('setUp activity.')
