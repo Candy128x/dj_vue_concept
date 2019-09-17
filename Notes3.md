@@ -22,7 +22,14 @@
 
 
 ---
+- Mixin | student app
+>https://www.django-rest-framework.org/tutorial/3-class-based-views/
+
+---
 ## Coding standards 
+- app name
+- ~ all lowercase, singular or plural
+
 - folder/dir name
 - ~ 
 
@@ -42,13 +49,14 @@
 - ~ 4 spaces
 
 - modal name
-- ~ camelCase
+- ~ file name: lowercase, using underscores. singular
+- ~ class name: PascalCase, AbcDefXyz
 
 - db name
 - ~ under_score
 
 - db table name
-- ~ under_score
+- ~ under_score, singular
 
 - table field name
 - ~ under_score

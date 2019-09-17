@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'movie',
     'fc_common',
     'fc_cust_reg',
+    'student',
 ]
 
 MIDDLEWARE = [
